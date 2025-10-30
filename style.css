@@ -216,7 +216,6 @@ body {
 }
 
 
-/* BARU: Style untuk membuat 2 kolom di konten kanan */
 .content-row {
     display: flex;
     gap: 20px;
@@ -226,5 +225,5 @@ body {
 .card-half {
     flex: 1;
     min-width: 0;
-    margin-bottom: 0; /* Menghilangkan margin bawah agar sejajar */
+    margin-bottom: 0;
 }
