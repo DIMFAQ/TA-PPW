@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-dark-blue: #0D47A1;
+    --secondary-blue: #1976D2;
+    --light-blue-bg: #E3F2FD;
+    --text-dark: #212121;
+    --text-light: #FFFFFF;
+    --border-color: #BDBDBD;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text-dark);
+    background-color: #f0f2f5;
+    font-size: 15px;
+}
+
+.header {
+    background-color: var(--primary-dark-blue);
+    color: var(--text-light);
+    padding: 15px 30px;
+    text-align: left;
+}
+
+.header h1 {
+    font-size: 22px;
+    display: inline-block;
+}
+
+.navigation {
+    float: right;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navigation a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: #BBDEFB;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.sidebar {
+    float: left;
+    width: 28%;
+    background-color: var(--light-blue-bg);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.content {
+    float: right;
+    width: 70%;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--secondary-blue);
+}
+
+.card h2 {
+    color: var(--primary-dark-blue);
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.card p {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.card article {
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    border: 4px solid var(--primary-dark-blue);
+}
+
+.btn {
+    background-color: var(--secondary-blue);
+    color: var(--text-light);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #1565C0;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+.widget h3 {
+    color: var(--primary-dark-blue);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--secondary-blue);
+    font-size: 18px;
+}
+
+.widget ul {
+    list-style: none;
+}
+
+.widget li {
+    margin-bottom: 8px;
+}
+
+.widget a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.widget a:hover {
+    background-color: #fff;
+    color: var(--secondary-blue);
+    border-color: var(--secondary-blue);
+}
+
+.contact-form div {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--secondary-blue);
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+.contact-form .required {
+    color: red;
+}
+
+.footer {
+    background-color: var(--primary-dark-blue);
+    color: var(--text-light);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    clear: both;
+}
+
+
+/* BARU: Style untuk membuat 2 kolom di konten kanan */
+.content-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.card-half {
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 0; /* Menghilangkan margin bawah agar sejajar */
+}
